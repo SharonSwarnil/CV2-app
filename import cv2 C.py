@@ -274,10 +274,11 @@ class HandGestureRecognizer:
         draw_text(frame_bgr, f"Fingers: {len(fingertips)}", xy=(12,80), scale=0.7, color=(200,200,0), thickness=2)
 
         return frame_bgr, gesture, mask
+        
 
-# -----------------------------------------------------------------------------
 # Main: argument parsing and capture loop
-# -----------------------------------------------------------------------------
+
+
 def parse_args():
     p = argparse.ArgumentParser(description="Hand Gesture Recognition (single-file)")
     p.add_argument("--camera", type=int, default=0, help="Webcam device index")
